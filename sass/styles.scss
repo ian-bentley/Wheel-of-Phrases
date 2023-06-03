@@ -1,0 +1,40 @@
+@use 'normalize';
+
+$hidden-letter-background-color: #c4c4c4;
+$correct-letter-background-color: #86fc88;
+$phrase-letter-color: #ffffff;
+
+#phrase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.word {
+    display: flex;
+    margin: 0px 20px;
+    max-width: 100%;
+}
+
+.letter {
+    background-color: $hidden-letter-background-color;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    border-radius: 15%;
+    color: $phrase-letter-color;
+}
+
+#keyboard {
+    button {
+        //border: none;
+        //border-radius: 15%;
+        //width: 50px;
+        height: 60px;
+    }
+}
