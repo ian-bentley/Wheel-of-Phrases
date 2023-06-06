@@ -4,12 +4,26 @@ $hidden-letter-background-color: #c4c4c4;
 $correct-letter-background-color: #86fc88;
 $phrase-letter-color: #ffffff;
 
+* {
+    box-sizing:border-box;
+}
+
 #phrase {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin: 20px;
+}
+
+#keyboard {
+    width: 100%;
+    button {
+        border: none;
+        border-radius: 15%;
+        width: calc(10%); // the calc accommodates for the padding so that ten button will perfectly fill the keyboard
+        height: 60px;
+    }
 }
 
 .word {
@@ -30,11 +44,8 @@ $phrase-letter-color: #ffffff;
     color: $phrase-letter-color;
 }
 
-#keyboard {
-    button {
-        //border: none;
-        //border-radius: 15%;
-        //width: 50px;
-        //height: 60px;
-    }
+.key-row {
+    display: flex;
+    justify-content: center;
 }
+

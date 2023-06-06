@@ -307,12 +307,26 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #phrase {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   margin: 20px;
+}
+
+#keyboard {
+  width: 100%;
+}
+#keyboard button {
+  border: none;
+  border-radius: 15%;
+  width: 10%;
+  height: 60px;
 }
 
 .word {
@@ -331,6 +345,11 @@ template {
   margin: 0px 5px;
   border-radius: 15%;
   color: #ffffff;
+}
+
+.key-row {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
