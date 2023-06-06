@@ -12,17 +12,21 @@ $phrase-letter-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
     gap: 10px;
     margin: 20px;
+    height: calc(50vh - 20px);
 }
 
 #keyboard {
-    width: 100%;
+    width: calc(100% - 20px);
+    margin: 0 20px;
     button {
         border: none;
         border-radius: 15%;
-        width: calc(10%); // the calc accommodates for the padding so that ten button will perfectly fill the keyboard
+        width: calc(10% - 2px);
         height: 60px;
+        margin: 2px;
     }
 }
 

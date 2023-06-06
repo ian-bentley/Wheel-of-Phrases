@@ -315,18 +315,22 @@ template {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
   gap: 10px;
   margin: 20px;
+  height: calc(50vh - 20px);
 }
 
 #keyboard {
-  width: 100%;
+  width: calc(100% - 20px);
+  margin: 0 20px;
 }
 #keyboard button {
   border: none;
   border-radius: 15%;
-  width: 10%;
+  width: calc(10% - 2px);
   height: 60px;
+  margin: 2px;
 }
 
 .word {
